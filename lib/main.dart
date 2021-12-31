@@ -39,6 +39,23 @@ class ChatScreen extends StatelessWidget {
       body: const SafeArea(
         child: MessageWidget(),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat),
+            label: 'Chats',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.call),
+            label: 'Calls',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+          ),
+        ],
+      ),
     );
   }
 }
